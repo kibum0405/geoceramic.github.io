@@ -1,0 +1,10 @@
+.v-row,
+.v-col,
+.v-container {
+    margin: 0;
+    padding: 0;
+}
+
+.v-container {
+    max-width: 100% !important;
+}

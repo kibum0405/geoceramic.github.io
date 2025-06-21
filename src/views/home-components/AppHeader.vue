@@ -20,13 +20,13 @@
 
         <!-- App Bar -->
         <v-app-bar app color="white" elevation="1" height="70">
-            <v-app-bar-title>
+            <v-app-bar-title class="ml-0">
                 <router-link to="/" class="logo-link">
                     <v-img 
                         src="/images/logo-row.png"
                         alt="회사로고" 
                         class="logo-image"
-                        max-height="50"
+                        width="200"
                         contain
                     />
                 </router-link>
@@ -86,6 +86,7 @@ export default {
     width: auto;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    display: block !important;
 }
 
 .logo-image:hover {

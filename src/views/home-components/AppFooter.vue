@@ -11,7 +11,10 @@
                 />
             </div>
             <div class="text-body-2 mb-1">
-                상호명:지오세라믹 대표자명:김수라
+                상호명:지오세라믹
+            </div>
+            <div class="text-body-2 mb-1">
+                대표자명:김소라
             </div>
             <div class="text-body-2 mb-1">
                 사업장 주소: 부산시 사상구 모라로 110번길 73

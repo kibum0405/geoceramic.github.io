@@ -149,6 +149,30 @@
 </template>
 
 <script>
+// 황토볼 이미지들
+import carbonActivatedBall1_img from '../images/carbon-activated-ball/1.jpg'
+import carbonActivatedBall2_img from '../images/carbon-activated-ball/2.jpg'
+import carbonActivatedBall3_img from '../images/carbon-activated-ball/3.jpg'
+import carbonActivatedBall4_img from '../images/carbon-activated-ball/4.jpg'
+
+// 특수세라믹볼 이미지들
+import zeoliteBall1_img from '../images/zeolite-ball/1.jpg'
+import zeoliteBall2_img from '../images/zeolite-ball/2.jpg'
+import zeoliteBall3_img from '../images/zeolite-ball/3.jpg'
+import zeoliteBall4_img from '../images/zeolite-ball/4.jpg'
+
+// 정수세라믹볼 이미지들
+import diatomaceousEarthBall1_img from '../images/diatomaceous-earth-ball/1.jpg'
+import diatomaceousEarthBall2_img from '../images/diatomaceous-earth-ball/2.jpg'
+import diatomaceousEarthBall3_img from '../images/diatomaceous-earth-ball/3.jpg'
+import diatomaceousEarthBall4_img from '../images/diatomaceous-earth-ball/4.jpg'
+
+// 탈취세라믹볼 이미지들
+import tourmalineBall1_img from '../images/tourmaline-ball/1.jpg'
+import tourmalineBall2_img from '../images/tourmaline-ball/2.jpg'
+import tourmalineBall3_img from '../images/tourmaline-ball/3.jpg'
+import tourmalineBall4_img from '../images/tourmaline-ball/4.jpg'
+
 export default {
     name: 'ProductIntro',
     data() {
@@ -160,10 +184,10 @@ export default {
                     subtitle: '100%국내산 황토로 만든 친환경 황토볼',
                     imageFolder: 'carbon-activated-ball',
                     images: [
-                        '/images/carbon-activated-ball/1.jpg',
-                        '/images/carbon-activated-ball/2.jpg',
-                        '/images/carbon-activated-ball/3.jpg',
-                        '/images/carbon-activated-ball/4.jpg'
+                        carbonActivatedBall1_img,
+                        carbonActivatedBall2_img,
+                        carbonActivatedBall3_img,
+                        carbonActivatedBall4_img
                     ],
                     descriptions: [
                         {
@@ -185,10 +209,10 @@ export default {
                     subtitle: '특수 기능성 광물질로 제작된 고품질 세라믹 볼',
                     imageFolder: 'zeolite-ball',
                     images: [
-                        '/images/zeolite-ball/1.jpg',
-                        '/images/zeolite-ball/2.jpg',
-                        '/images/zeolite-ball/3.jpg',
-                        '/images/zeolite-ball/4.jpg'
+                        zeoliteBall1_img,
+                        zeoliteBall2_img,
+                        zeoliteBall3_img,
+                        zeoliteBall4_img
                     ],
                     descriptions: [
                         {
@@ -210,10 +234,10 @@ export default {
                     subtitle: '물의 불순물을 제거하는 정수 전용 세라믹 볼',
                     imageFolder: 'diatomaceous-earth-ball',
                     images: [
-                        '/images/diatomaceous-earth-ball/1.jpg',
-                        '/images/diatomaceous-earth-ball/2.jpg',
-                        '/images/diatomaceous-earth-ball/3.jpg',
-                        '/images/diatomaceous-earth-ball/4.jpg'
+                        diatomaceousEarthBall1_img,
+                        diatomaceousEarthBall2_img,
+                        diatomaceousEarthBall3_img,
+                        diatomaceousEarthBall4_img
                     ],
                     descriptions: [
                         {
@@ -235,10 +259,10 @@ export default {
                     subtitle: '냄새 제거와 공기 정화 기능을 가진 세라믹 볼',
                     imageFolder: 'tourmaline-ball',
                     images: [
-                        '/images/tourmaline-ball/1.jpg',
-                        '/images/tourmaline-ball/2.jpg',
-                        '/images/tourmaline-ball/3.jpg',
-                        '/images/tourmaline-ball/4.jpg'
+                        tourmalineBall1_img,
+                        tourmalineBall2_img,
+                        tourmalineBall3_img,
+                        tourmalineBall4_img
                     ],
                     descriptions: [
                         {

@@ -6,7 +6,7 @@
                 <v-col cols="12">
                     <div class="hero-section">
                         <v-img
-                            src="/images/company-intor.png"
+                            :src="companyIntro_img"
                             alt="회사소개 이미지"
                             class="company-image"
                             height="500"
@@ -156,11 +156,13 @@
 </template>
 
 <script>
+import companyIntro_img from '../images/company-intor.png'
 
 export default {
     name: 'CompanyIntro',
     data() {
         return {
+            companyIntro_img: companyIntro_img,
             showAddressCopied: false,
             showPhoneCopied: false
         }

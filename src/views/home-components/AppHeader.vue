@@ -23,7 +23,7 @@
             <v-app-bar-title class="ml-0">
                 <router-link to="/" class="logo-link">
                     <v-img 
-                        src="/images/logo-row.png"
+                        :src="logoRow_img"
                         alt="회사로고" 
                         class="logo-image"
                         width="200"
@@ -58,11 +58,14 @@
 </template>
 
 <script>
+import logoRow_img from '../images/logo-row.png'
+
 export default {
     name: 'AppHeader',
     data() {
         return {
             drawer: false,
+            logoRow_img: logoRow_img,
             menuItems: [
                 { title: '회사소개', route: '/company' },
                 { title: '제품소개', route: '/products' },

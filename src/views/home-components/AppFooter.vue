@@ -3,7 +3,7 @@
         <div class="text-center w-100">
             <div class="mb-2">
                 <v-img 
-                    src="/images/logo-col.png"
+                    :src="logoCol_img"
                     alt="회사로고" 
                     class="footer-logo"
                     max-height="120"
@@ -30,8 +30,15 @@
 </template>
 
 <script>
+import logoCol_img from '../images/logo-col.png'
+
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            logoCol_img: logoCol_img
+        }
+    }
 }
 </script>
 

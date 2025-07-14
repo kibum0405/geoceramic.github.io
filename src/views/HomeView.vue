@@ -98,6 +98,11 @@
 </template>
 
 <script>
+import carbonActivatedBall1_img from './images/carbon-activated-ball/1.jpg'
+import zeoliteBall1_img from './images/zeolite-ball/1.jpg'
+import diatomaceousEarthBall1_img from './images/diatomaceous-earth-ball/1.jpg'
+import tourmalineBall1_img from './images/tourmaline-ball/1.jpg'
+
 export default {
     name: 'HomeView',
     data() {
@@ -106,22 +111,22 @@ export default {
             products: [
                 {
                     name: '황토볼',
-                    image: '/images/carbon-activated-ball/1.jpg',
+                    image: carbonActivatedBall1_img,
                     description: '100% 국내산 황토로 만든 천연 세라믹 볼'
                 },
                 {
                     name: '특수세라믹볼',
-                    image: '/images/zeolite-ball/1.jpg',
+                    image: zeoliteBall1_img,
                     description: '특수 기능성 광물질로 제작된 고품질 세라믹 볼'
                 },
                 {
                     name: '정수세라믹볼',
-                    image: '/images/diatomaceous-earth-ball/1.jpg',
+                    image: diatomaceousEarthBall1_img,
                     description: '물의 불순물을 제거하는 정수 전용 세라믹 볼'
                 },
                 {
                     name: '탈취 세라믹볼',
-                    image: '/images/tourmaline-ball/1.jpg',
+                    image: tourmalineBall1_img,
                     description: '냄새 제거와 공기 정화 기능을 가진 세라믹 볼'
                 }
             ]

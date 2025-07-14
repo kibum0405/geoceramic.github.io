@@ -69,7 +69,7 @@ export default {
             menuItems: [
                 { title: '회사소개', route: '/company' },
                 { title: '제품소개', route: '/products' },
-                { title: '공지사항', route: '/notice' },
+                // { title: '공지사항', route: '/notice' },
                 { title: '고객센터', route: '/contact' }
             ]
         }

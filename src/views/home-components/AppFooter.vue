@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style scoped>
+.footer-bg-color {
+    background-color: #f5f5f5;
+}
+
 .footer-logo {
     max-height: 200px;
     width: auto;

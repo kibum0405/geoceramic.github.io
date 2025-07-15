@@ -57,7 +57,7 @@
                         </v-col>
 
                         <!-- 우측 이미지 캐러셀 -->
-                        <v-col cols="12" md="5" class="image-section">
+                        <!-- <v-col cols="12" md="5" class="image-section">
                             <v-card elevation="12" class="product-showcase rounded-xl">
                                 <v-carousel
                                     v-model="selectedProduct"
@@ -89,6 +89,25 @@
                                     </v-carousel-item>
                                 </v-carousel>
                             </v-card>
+                        </v-col> -->
+
+                        <!-- 우측 단일 이미지 -->
+                        <v-col cols="12" md="5" class="image-section">
+                            <v-card elevation="12" class="product-showcase rounded-xl">
+                                <v-img
+                                    :src="products[0].image"
+                                    :alt="products[0].name"
+                                    height="450"
+                                    cover
+                                >
+                                    <div class="product-overlay">
+                                        <div class="product-info">
+                                            <h3 class="product-title">{{ products[0].name }}</h3>
+                                            <p class="product-description">{{ products[0].description }}</p>
+                                        </div>
+                                    </div>
+                                </v-img>
+                            </v-card>
                         </v-col>
                     </v-row>
                 </v-container>
@@ -98,6 +117,7 @@
 </template>
 
 <script>
+import mainBall_img from './images/main-ball.jpeg'
 import carbonActivatedBall1_img from './images/carbon-activated-ball/1.jpg'
 import zeoliteBall1_img from './images/zeolite-ball/1.jpg'
 import diatomaceousEarthBall1_img from './images/diatomaceous-earth-ball/1.jpg'
@@ -111,24 +131,29 @@ export default {
             products: [
                 {
                     name: '황토볼',
-                    image: carbonActivatedBall1_img,
+                    image: mainBall_img,
                     description: '100% 국내산 황토로 만든 천연 세라믹 볼'
                 },
-                {
-                    name: '특수세라믹볼',
-                    image: zeoliteBall1_img,
-                    description: '특수 기능성 광물질로 제작된 고품질 세라믹 볼'
-                },
-                {
-                    name: '정수세라믹볼',
-                    image: diatomaceousEarthBall1_img,
-                    description: '물의 불순물을 제거하는 정수 전용 세라믹 볼'
-                },
-                {
-                    name: '탈취 세라믹볼',
-                    image: tourmalineBall1_img,
-                    description: '냄새 제거와 공기 정화 기능을 가진 세라믹 볼'
-                }
+                // {
+                //     name: '황토볼',
+                //     image: carbonActivatedBall1_img,
+                //     description: '100% 국내산 황토로 만든 천연 세라믹 볼'
+                // },
+                // {
+                //     name: '특수세라믹볼',
+                //     image: zeoliteBall1_img,
+                //     description: '특수 기능성 광물질로 제작된 고품질 세라믹 볼'
+                // },
+                // {
+                //     name: '정수세라믹볼',
+                //     image: diatomaceousEarthBall1_img,
+                //     description: '물의 불순물을 제거하는 정수 전용 세라믹 볼'
+                // },
+                // {
+                //     name: '탈취 세라믹볼',
+                //     image: tourmalineBall1_img,
+                //     description: '냄새 제거와 공기 정화 기능을 가진 세라믹 볼'
+                // }
             ]
         }
     }

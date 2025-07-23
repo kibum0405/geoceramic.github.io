@@ -137,7 +137,8 @@
             </v-row>
             <v-row justify="center">
                 <v-col cols="12" md="10" lg="8">
-                    <v-card elevation="4" class="rounded-lg overflow-hidden">
+                    <!-- 데스크톱: iframe 지도 표시 -->
+                    <v-card elevation="4" class="rounded-lg overflow-hidden d-none d-md-block">
                         <iframe
                             src="https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%EC%8B%9C%20%EC%82%AC%EC%83%81%EA%B5%AC%20%EB%AA%A8%EB%9D%BC%EB%A1%9C%20110%EB%B2%88%EA%B8%B8%2073/place/1220933707?c=15.00,0,0,0,dh&placePath=%2Fhome"
                             width="100%"
@@ -148,6 +149,28 @@
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
+                    </v-card>
+                    
+                    <!-- 모바일: 지도 링크 버튼 표시 -->
+                    <v-card elevation="4" class="rounded-lg d-block d-md-none mobile-map-card">
+                        <v-card-text class="text-center pa-8">
+                            <v-icon size="48" color="#03C75A" class="mb-4">mdi-map-marker</v-icon>
+                            <h3 class="mb-4">네이버 지도에서 위치 확인</h3>
+                            <p class="mb-6 text-grey-darken-1">
+                                부산시 사상구 모라로 110번길 73<br>
+                                네이버 지도에서 정확한 위치와 길찾기를 확인하실 수 있습니다.
+                            </p>
+                            <v-btn
+                                color="#03C75A"
+                                size="large"
+                                rounded
+                                @click="openNaverMap"
+                                class="text-white font-weight-bold"
+                            >
+                                <v-icon left>mdi-map</v-icon>
+                                네이버 지도에서 보기
+                            </v-btn>
+                        </v-card-text>
                     </v-card>
                 </v-col>
             </v-row>
@@ -189,6 +212,10 @@ export default {
             }).catch(() => {
                 alert('복사에 실패했습니다.');
             });
+        },
+        openNaverMap() {
+            const mapUrl = 'https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%EC%8B%9C%20%EC%82%AC%EC%83%81%EA%B5%AC%20%EB%AA%A8%EB%9D%BC%EB%A1%9C%20110%EB%B2%88%EA%B8%B8%2073/place/1220933707?c=15.00,0,0,0,dh&placePath=%2Fhome';
+            window.open(mapUrl, '_blank');
         }
     }
 }
@@ -368,6 +395,17 @@ export default {
     20% { opacity: 1; transform: translateX(-50%) translateY(0); }
     80% { opacity: 1; transform: translateX(-50%) translateY(0); }
     100% { opacity: 0; transform: translateX(-50%) translateY(-5px); }
+}
+
+.mobile-map-card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.mobile-map-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
 }
 
 @media (max-width: 959px) {
